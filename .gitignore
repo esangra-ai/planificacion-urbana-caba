@@ -1,0 +1,28 @@
+nombre_proyecto/
+├── readme.md                          # Descripción, integrantes, link al sitio, captura y fuentes de datos
+├── decisiones.md                      # Registro fechado de lo que probaron, descartaron y por qué
+├── .gitignore                         # Copiar el que provee la cátedra (evita subir claves y archivos pesados)
+├── datasets/                          # CSV originales, con el nombre de descarga sin modificar
+│   ├── diccionario.md                 # Qué significa cada columna, unidad y filtros aplicados
+│   └── ecobicis_2018-2024.csv
+├── datasets_procesados/               # Datasets recortados, reorganizados o filtrados
+│   └── ecobicis_2018-2024__columnas_simplificado.csv   # Nombre original + __transformación
+├── diseno/
+│   ├── referencias/                   # Imágenes de referencia
+│   └── prototipos/                    # Una carpeta por versión o por estudiante
+│       ├── prototipo_v1/
+│       ├── prototipo_v2/
+│       ├── prototipo_cristian/
+│       └── prototipo_ivan/
+├── prompts/                           # Prompts usados con el LLM, versionados
+│   ├── prompt_plan_v1.md
+│   └── prompt_plan_v2.md
+├── codigo/                            # Scripts de descarga, limpieza y normalización
+│   └── filtrar_villa_crespo.py        # Nombre que describe lo que hace
+├── entregas/                          # Estado del proyecto en cada entrega
+│   ├── entrega_1/                     # Capturas de la app + link al sitio en ese momento
+│   └── entrega_2/
+└── app/                               # Solo los archivos que necesita el sitio. Es la carpeta que se publica en Netlify
+    ├── index.html
+    ├── estilos.css
+    └── ...
